@@ -12,9 +12,9 @@ class WeatherApiClient {
     fun weatherRequest(): WeatherEntity {
         var response = restTemplate.getForObject(this.endPoint, WeatherEntity::class.java)
 //        throw HttpRequestGetNullException("weatherAPI2")
-        if(response != null) {
+        if (response != null) {
             return response
-        }else{
+        } else {
             throw HttpRequestGetNullException("weatherAPI")
         }
     }

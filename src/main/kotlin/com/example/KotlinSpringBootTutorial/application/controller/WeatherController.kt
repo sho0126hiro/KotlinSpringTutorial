@@ -9,7 +9,6 @@ import org.springframework.web.HttpRequestMethodNotSupportedException
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RestControllerAdvice
 @RequestMapping("/weather")
 class WeatherController(){
 
